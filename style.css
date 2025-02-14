@@ -1,0 +1,154 @@
+/* General Page Styles */
+body {
+  background-color: #ffc0cb; /* Light pink background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* Adding a transition for smoother transform changes */
+  transition: transform 0.1s;
+}
+
+/* Text styling */
+#text {
+  margin-bottom: 50px;
+  font-family: cursive;
+  font-size: 30px;
+  color: white;
+}
+
+h1 {
+  color: #f44336;
+  font-family:'Courier New', Courier, monospace;
+
+}
+
+/* Image placeholder styling */
+.image-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Button container styling */
+.button-container {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#yesButton {
+  background-color: #4caf50; /* Green */
+  color: #fff;
+}
+
+#noButton {
+  background-color: #f44336; /* Red */
+  color: #fff;
+}
+
+/* Scene container styling */
+#scene1, #scene2 {
+  text-align: center;
+}
+
+/* Popup Styles (used for Wrong Choice) */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  /* Start hidden and scaled down */
+  opacity: 0;
+  transform: scale(0.5);
+  /* The animation will bring the popup into view */
+  animation: popupAnimation 0.5s forwards;
+}
+
+/* Keyframes for the pop-up animation */
+@keyframes popupAnimation {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Keyframes for shaking the entire screen */
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-10px, 0); }
+  20% { transform: translate(10px, 0); }
+  30% { transform: translate(-10px, 0); }
+  40% { transform: translate(10px, 0); }
+  50% { transform: translate(-10px, 0); }
+  60% { transform: translate(10px, 0); }
+  70% { transform: translate(-10px, 0); }
+  80% { transform: translate(10px, 0); }
+  90% { transform: translate(-10px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Class to trigger the shake animation on the body */
+.shake {
+  animation: shake 0.5s;
+}
+
+/* ----- New Gallery Styles for Scene 2 ----- */
+
+/* Gallery container: two columns side by side */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Each column stacks images vertically */
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Images in the gallery */
+.column img {
+  width: 150px;   /* You can adjust this width as needed */
+  height: auto;
+  display: block;
+}
+
+#closeWrongPopup {
+  background-color: red;
+}
+
+h2 {
+  color: white;
+  font-family:'Courier New', Courier, monospace
+}

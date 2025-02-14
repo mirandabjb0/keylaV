@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Be My Valentine?</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Scene 1: Main content -->
+  <div id="scene1">
+    <div id="texto">
+      <p id="text">
+        Will You Be My Valentine?
+      </p>
+    </div>
+    <!-- Image placeholder section -->
+    <div class="image-placeholder">
+      <!-- Replace the src URL with your own image if desired -->
+      <img src="src/gato-removebg-preview.png" alt="Image Placeholder" />
+    </div>
+    <!-- Buttons container -->
+    <div class="button-container">
+      <button id="yesButton">Si</button>
+      <button id="noButton">No</button>
+    </div>
+  </div>
+
+  <!-- Scene 2: New scene after Yes is pressed (hidden by default) -->
+  <div id="scene2" style="display: none;">
+    <h1>Muy mien mi corazon </h1>
+    <p  id="text"> Te amo mi bebe, aqui unas de nuestras tantas memorias</p>
+    <!-- Gallery container -->
+    <div class="gallery">
+      <!-- Column 1: 5 images -->
+      <div class="column">
+        <img src="src\IMG_1106 - Copy.JPEG" alt="Photo 1">
+        <img src="src\IMG_1198 - Copy.JPEG" alt="Photo 2">
+        <img src="src\IMG_1380 - Copy.JPEG" alt="Photo 3">
+        <img src="src\IMG_1681 - Copy.JPEG" alt="Photo 4">
+        <img src="src\IMG_2788.JPEG" alt="Photo 5">
+      </div>
+      <!-- Column 2: 5 images -->
+      <div class="column">
+        <img src="src\IMG_3369.JPEG" alt="Photo 6">
+        <img src="src\IMG_3414.JPG" alt="Photo 7">
+        <img src="src\IMG_4180.JPEG" alt="Photo 8">
+        <img src="src\IMG_2373 - Copy.JPEG" alt="Photo 9">
+        <img src="src\IMG_1620(1).JPEG" alt="Photo 10">
+      </div>
+      <div class="column">
+        <img src="src\IMG_3423.JPG" alt="Photo 11">
+        <img src="src\IMG_2048.JPEG" alt="Photo 12">
+        <img src="src\IMG_4141.JPEG" alt="Photo 13">
+        <img src="src\IMG_0640(1).JPEG" alt="Photo 14">
+        <img src="src\IMG_4226.JPEG" alt="Photo 15">
+      </div>
+    </div>
+    <div>
+      <h2>Queria decirte que a pesar de que no nos vayamos a ver este dia, te amo con todo mi corazon y no hay nada que nos pueda separar, gracias por todo y por tanto mi corazon, estoy tan agradecido con la vida por tenerte a mi lado, pronto nos veremos y podremos hacer tantas cosas para recuperar algo del tiempo que pasamos sin vernos mi vida.
+        El dia de mañana te invito cordialmente a una cita conmigo, comeremos uno comida y uno papitas, y miraremos cositas mi nena, espero aceptes.
+      </h2>
+    </div>
+    
+  </div>
+
+  <!-- Popup Container for the Wrong Choice (No) -->
+  <div id="wrongPopup" class="popup">
+    <div class="popup-content">
+      <p>Respuesta Incorrecta, uno no me amas?</p>
+      <button id="closeWrongPopup">Close</button>
+    </div>
+  </div>
+
+  <!-- Reference to the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
